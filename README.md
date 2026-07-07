@@ -5,7 +5,7 @@ twitter数据采集推特数据采集
 twitter数据服务,可提供日数据2亿推送 ,解决风控限制，次数限制，账号管理问题,
 tiktok  主页 评论采集
 #### 服务地址 联系 飞机 https://t.me/fofo123dd  
-##### 一、  twitter搜索 列表 （可采全）
+##### 一、  twitter搜索
 
 * Post:/twitter_api/search
 
@@ -19,7 +19,7 @@ tiktok  主页 评论采集
 ```json
 ```
 
-##### 二、twitter用户列表（可采全）
+##### 二、twitter用户发文
 
 * Post:/twitter_api/user_timeline
 
@@ -29,3 +29,28 @@ tiktok  主页 评论采集
 | max_id  | String    | 从0起 ，获取最小id |
 | token | String | 用户标识                               |
 * 返回：
+```json
+```
+##### 三、twitter粉丝列表
+
+* Post:/twitter_api/followers
+
+| 名称  | 类型   | 含义                                   |
+| ----- | ------ | -------------------------------------- |
+| user_id   | String | 用户id,eg:1454736746621521928         |
+| cursor  | String    | 游标 |
+| token | String | 用户标识                               |
+* 返回：
+```json
+```
+##### 四、twitter用户信息
+
+* Post:/twitter_api/user_show
+
+| 名称  | 类型   | 含义                                   |
+| ----- | ------ | -------------------------------------- |
+| user_id   | String | 用户id,eg:1454736746621521928         |
+| token | String | 用户标识                               |
+* 返回：
+```json
+```
